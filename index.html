@@ -19,7 +19,7 @@
             <div class="container">
                 <div id = "error"></div>
              <div id="obje">
-                   <p>Elija Objetivo
+                   <p>Objetivo
                    <select name="opc" id="opc">
                        <option value="Maxi">Maximizar</option>
                        <option value ="Mini">Minimizar</option>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="container">
-             <p>Función Objetivo:</p> 
+             <p><b>Función Objetivo: </b></p> 
               <div id="func_obj">
                  <p>Z= 
                  <input type="text" id="xFuncion" value="">
@@ -39,8 +39,11 @@
                   </p>
                 </div>
              </div>
-            <br>
-            <p>Sujeto a: </p>
+            <p><b>Restricciones:</b> </p>
+            <input type="button" class="btn btn-outline-success" onclick="agregar()" value="Agregar restriccion">
+            <input type="button" class="btn btn-outline-danger"  onclick="quitar()" value="Quitar ultima restriccion">
+            <input type="button" class= "btn btn-outline-warning" onclick="limpiar()" value="Limpiar formato">
+            <p></p>
          <div id="restricciones_input", class = "container">
              <div class="restriccion">
                   <p>
@@ -98,16 +101,13 @@
                     </p>
                 </div>
             </div>
-            <p>X, Y >=0</p>
+            <p><b>X, Y >= 0</b></p>
 
-            <input type="button" class="btn btn-outline-success" onclick="agregar()" value="Agregar restriccion">
-            <input type="button" class="btn btn-outline-danger"  onclick="quitar()" value="Quitar ultima restriccion">
-            <input type="button" class= "btn btn-outline-warning" onclick="limpiar()" value="Limpiar formato">
-            <input type="button" class= "btn btn-outline-primary" onclick="graficar()" value="Graficar">
             
+            <input type="button" class= "btn btn-outline-primary" onclick="graficar()" value="Graficar">
+            <p></p>
             
         </div>
-        <br/>
         
         <div id="ggbApplet" style="margin: 4 auto;"></div> 
     </div>
@@ -135,5 +135,9 @@
     </div>
     </body>
     <script src="grafico.js"></script>
+
+    
+    
+      
 </div>
 </html>
