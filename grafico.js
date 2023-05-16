@@ -181,13 +181,13 @@ onload = (event) => {
             resul.innerHTML = `
             <p>
             El valor optimo de <b>Z</b> es: <b>${maxval} </b>  <br/>
-            Con las coordenadas <b>${maxcords}</b>.
+            Con los valores (X,Y) : <b>${maxcords}</b>.
             </p>`;
           }else if(objetivo == 'Mini'){
             resul.innerHTML = `
             <p>
             El valor optimo de <b>Z</b> es: <b>${minval} </b>  <br/>
-            Con las coordenadas <b>${mincords}</b>.
+            Con los valores (X,Y) : <b>${mincords}</b>.
             </p>`;
           }else{
             resul.innerHTML = `
